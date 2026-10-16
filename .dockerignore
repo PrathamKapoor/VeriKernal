@@ -1,0 +1,13 @@
+.venv
+.tmp
+.cargo
+dist
+target
+build
+**/__pycache__
+**/*.egg-info
+*.egg-info
+__pycache__
+.pytest_cache
+.playwright
+.playwright-cli
