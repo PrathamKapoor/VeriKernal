@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "verikernel"
+version = "0.2.0"
+description = "Boundary contracts, deterministic fault schedules and signed execution receipts"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [{name = "Pratham Kapoor", email = "prathamkapoor027@gmail.com"}]
+dependencies = ["blake3>=1.0", "dilithium-py>=1.5", "numpy>=2.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+native = ["pqcrypto>=1.0"]
+
+[project.scripts]
+verikernel = "verikernel.cli.main:main"
+
+[tool.setuptools]
+packages = ["verikernel", "verikernel.m1_contract", "verikernel.m2_enforcer", "verikernel.m3_fault", "verikernel.m4_attest", "verikernel.m5_ringbuf", "verikernel.m6_quantum", "verikernel.cli", "verikernel.ui", "benchmarks", "examples"]
+package-dir = {"verikernel" = "src/verikernel", "benchmarks" = "benchmarks", "examples" = "examples"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+addopts = "--basetemp=.tmp/pytest"

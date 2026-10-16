@@ -1,0 +1,3 @@
+[workspace]
+members = ["crates/verikernel-schema", "crates/verikernel-core", "crates/verikernel-target-bin", "crates/verikernel-sandbox-exec"]
+resolver = "2"

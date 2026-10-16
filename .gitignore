@@ -1,0 +1,16 @@
+.tmp/
+.venv/
+.cache/
+.cargo/
+target/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+*.vkr
+*.key
+*.pem
+.playwright-cli/
+.playwright/
