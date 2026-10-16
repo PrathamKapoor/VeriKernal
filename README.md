@@ -303,6 +303,11 @@ The BPF inode digest is distinct from portable canonical target digests; the pro
 I execute 109 Python tests with zero failures, errors or skips, 14 native ARM64 Rust tests and 14 host x64 Rust tests.
 All twelve local CI verification checks succeed. Remote matrix execution is reported separately.
 
+The CI matrix targets Windows and Linux. On Windows without the contained Linux guest,
+preflight deselects tests marked `linux_kernel` and records Linux confinement as unavailable.
+The Ubuntu job runs the Linux kernel proof; a failed proof fails that job. Windows resource
+confinement checks remain required on Windows.
+
 | Capability | Observed result |
 |---|---|
 | Machine-code inspection | Six release arithmetic bodies; no conditional transfers/calls after public guards; aarch64 |

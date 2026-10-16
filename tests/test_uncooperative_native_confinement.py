@@ -40,6 +40,7 @@ def test_real_job_object_denies_spawn_and_memory_without_preload(tmp_path):
         assert result['memory']['memory_limit_bytes'] == 16*1024*1024
 
 
+@pytest.mark.linux_kernel
 def test_real_linux_preexec_filter_denies_uncooperative_socket_and_spawn():
     from scripts.verify_native_confinement import verify_linux_confinement
     report = verify_linux_confinement()

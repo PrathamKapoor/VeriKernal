@@ -26,3 +26,4 @@ package-dir = {"verikernel" = "src/verikernel", "benchmarks" = "benchmarks", "ex
 testpaths = ["tests"]
 pythonpath = ["src", "."]
 addopts = "--basetemp=.tmp/pytest"
+markers = ["linux_kernel: requires native Linux or the contained QEMU Linux guest"]

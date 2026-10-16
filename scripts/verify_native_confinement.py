@@ -117,6 +117,11 @@ def qemu_native_probe(backend: dict[str, object]) -> str:
                 os.replace(transcript,logs/'native-console-last.log')
 
 
+def linux_confinement_available() -> bool:
+    """Find a native Linux kernel or the contained guest; O(N) backend checks."""
+    return sys.platform == 'linux' or any(item['kind'] == 'qemu' for item in discover_backends())
+
+
 def verify_linux_confinement() -> dict[str, object]:
     """Require measured Linux kernel denials; O(B) bounded artifacts and output."""
     if sys.platform == 'linux':
