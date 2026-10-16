@@ -1,0 +1,16 @@
+{
+  "native_loaded": true,
+  "fnv1a_1024": {
+    "python": {
+      "seconds": 4.0439225999999735,
+      "calls": 20000,
+      "checksum": 0
+    },
+    "native": {
+      "seconds": 0.09027620000006209,
+      "calls": 20000,
+      "checksum": 0
+    }
+  },
+  "speedup": 44.79500244801168
+}

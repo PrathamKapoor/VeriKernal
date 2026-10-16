@@ -1,0 +1,92 @@
+{
+  "resources": {
+    "spawn": {
+      "attack": "spawn",
+      "denied": true,
+      "errno": 1816,
+      "error": "Not enough quota is available to process this command. (os error 1816)",
+      "returncode": 77,
+      "pid": 12500,
+      "tid": 11436,
+      "assigned_before_resume": true,
+      "memory_limit_bytes": 16777216,
+      "peak_process_memory_bytes": 1568768,
+      "accounting": {
+        "user_time": 156250,
+        "kernel_time": 0,
+        "period_user": 156250,
+        "period_kernel": 0,
+        "page_faults": 4347,
+        "total_processes": 2,
+        "active_processes": 1,
+        "terminated_processes": 0
+      },
+      "elapsed_seconds": 0.048431999999934305,
+      "output": "{\"attack\":\"spawn\",\"denied\":true,\"errno\":1816,\"error\":\"Not enough quota is available to process this command. (os error 1816)\"}\n",
+      "backend": "windows-nt-job"
+    },
+    "memory": {
+      "attack": "memory",
+      "denied": true,
+      "error": "memory allocation failed because the memory allocator returned an error",
+      "returncode": 77,
+      "pid": 5384,
+      "tid": 4592,
+      "assigned_before_resume": true,
+      "memory_limit_bytes": 16777216,
+      "peak_process_memory_bytes": 1572864,
+      "accounting": {
+        "user_time": 156250,
+        "kernel_time": 156250,
+        "period_user": 156250,
+        "period_kernel": 156250,
+        "page_faults": 4133,
+        "total_processes": 2,
+        "active_processes": 1,
+        "terminated_processes": 0
+      },
+      "elapsed_seconds": 0.03553060000001551,
+      "output": "{\"attack\":\"memory\",\"denied\":true,\"error\":\"memory allocation failed because the memory allocator returned an error\"}\n",
+      "backend": "windows-nt-job"
+    },
+    "controls": {
+      "spawn_succeeded": true,
+      "memory_succeeded": true
+    }
+  },
+  "accounting_bound": true,
+  "ledger_directory": "dist\\preflight\\kernel-accounting-8e0165f634c14bf1aa93975cdf6cef83",
+  "linux": {
+    "controls": {
+      "read_succeeded": true,
+      "socket_succeeded": true,
+      "spawn_succeeded": true
+    },
+    "kernel": "6.8.0-142-generic",
+    "landlock": {
+      "attack": "read",
+      "denied": true,
+      "errno": 13,
+      "returncode": 77
+    },
+    "launcher_sha256": "7582156a73512ecf1ec701435e50056f648ea441093c039678cffd0ab640c111",
+    "machine": "aarch64",
+    "socket": {
+      "attack": "socket",
+      "denied": true,
+      "errno": 13,
+      "returncode": 77
+    },
+    "spawn": {
+      "attack": "spawn",
+      "denied": true,
+      "errno": 13,
+      "error": "Permission denied (os error 13)",
+      "returncode": 77
+    },
+    "target_sha256": "d81aaaf090491c1c6346295785bc77b66566ee7509a16b9c3fc09fb94f72cc0b",
+    "uid": 65534,
+    "verified": true,
+    "backend": "qemu-linux"
+  }
+}

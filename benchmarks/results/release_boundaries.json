@@ -1,0 +1,57 @@
+{
+  "zero_dynamic_package_annotations": true,
+  "machine_code": {
+    "conditional_branches_in_body": [],
+    "body_instruction_count": 132,
+    "constant_time_asm_verified": true,
+    "architecture": "aarch64",
+    "library": "C:\\Pratham\\VeriKernel\\dist\\native\\aarch64-pc-windows-gnullvm\\verikernel_core.dll",
+    "symbol": "vk_constant_time_compare_32",
+    "symbol_rva": 205816,
+    "artifact_sha256": "7952b9228e37ce8dd10e144f4d719eb1f2fa8a9c8f9a5deca8f8b4f8406b9899",
+    "machine_code_hex": "e8031f2a801000b4611000b408004039290040390a0440392b0440390c0840392d0840392801084a0e0c40392f0c403969010a4aaa010c4a0b1040392801082ae9010e4a2c1040390d1440392e1440394901092a0a1840392f1840390801092a89010b4acb010d4a29010b2aea010a4a0b1c40392c1c40390d2040392e20403929010a2a0a2440392f2440390801092a89010b4acb010d4a29010b2aea010a4a0b2840392c2840390d2c40392e2c403929010a2a0a3040392f304039cd010d4a0e34403930344039ea010a4a0f384039313840398b010b4aaa010a2a0c020e4a29010b2a4a010c2a2b020f4a0801092a49010b2a0a3c40392b3c40390c4040392d4040390e4440392f4440396a010a4a0b4840393048403929010a2aaa010c4aec010e4a0801092a49010c2a0a020b4a29010a2a0a4c40392b4c40390c5040392d5040390e5440392f54403910584039315840396a010a4a0b5c4039225c403929010a2aaa010c4a2c02104a0d604039306040394b000b4a29010a2aea010e4a8b010b2a0c020d4a0d6440392e6440396b010c2a0c6840392f684039cd010d4a0e6c4039306c403929010a2a6a010d2aeb010c4a0801092a49010b2a0a020e4a0b7040392c7040390d7440392e7440390f7840393078403929010a2a0a7c4039317c40398b010b4acc010d4a0d020f4a29010b2a8b010d2a2a020a4a0801092a69010a2a0801092a081d001208050051087d1f53e003082ac0035fd6",
+    "guard_instruction_count": 3,
+    "scope": "branch-free decoded comparison body; public pointer guards excluded"
+  },
+  "native_target": {
+    "verified": true,
+    "binary": "C:\\Pratham\\VeriKernel\\dist\\native\\aarch64-pc-windows-gnullvm\\vk-target-bin.exe",
+    "gitoid": "gitoid:blob:sha256:114f91a34fe6c1d0688911008bb727aee76f4cbd0c6b5b595cd40d7dfcfafe8c",
+    "shared_libraries": [
+      "KERNEL32.dll",
+      "WS2_32.dll",
+      "api-ms-win-core-synch-l1-2-0.dll",
+      "api-ms-win-crt-environment-l1-1-0.dll",
+      "api-ms-win-crt-heap-l1-1-0.dll",
+      "api-ms-win-crt-locale-l1-1-0.dll",
+      "api-ms-win-crt-math-l1-1-0.dll",
+      "api-ms-win-crt-private-l1-1-0.dll",
+      "api-ms-win-crt-runtime-l1-1-0.dll",
+      "api-ms-win-crt-stdio-l1-1-0.dll",
+      "api-ms-win-crt-string-l1-1-0.dll",
+      "libunwind.dll",
+      "ntdll.dll"
+    ],
+    "event_count": 5,
+    "normal_seconds": 0.1661348000000089,
+    "strict_denial": true,
+    "minimal_fault_sites": [
+      2
+    ],
+    "oracle_evaluations": 6,
+    "fault_code": -28,
+    "scope": "cooperative compiled adapter; actual filesystem workload"
+  },
+  "distribution": {
+    "reproducible": true,
+    "clean_install_verified": true,
+    "source_date_epoch": 1760486400,
+    "artifact": "C:\\Pratham\\VeriKernel\\dist\\verikernel-0.2.0-py3-none-any.whl",
+    "build_1_sha256": "1a734d9a8d60e3f869e394f1f50b90a76537dbd4141f3f878e31093b628ab5e6",
+    "build_2_sha256": "1a734d9a8d60e3f869e394f1f50b90a76537dbd4141f3f878e31093b628ab5e6",
+    "build_1_gitoid": "gitoid:blob:sha256:eebdd78da565304b8c132c7f554b877a5132dd787007875f4bc1583f2dff12b1",
+    "build_2_gitoid": "gitoid:blob:sha256:eebdd78da565304b8c132c7f554b877a5132dd787007875f4bc1583f2dff12b1",
+    "size_bytes": 178014,
+    "scope": "same source snapshot and Python ZIP toolchain; optional native libraries excluded"
+  }
+}

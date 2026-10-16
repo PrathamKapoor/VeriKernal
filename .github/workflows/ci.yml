@@ -1,0 +1,42 @@
+name: Cross-platform verification
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prepare contained environment
+        shell: bash
+        run: |
+          mkdir -p .tmp dist
+          export TEMP="$PWD/.tmp" TMP="$PWD/.tmp" TMPDIR="$PWD/.tmp" PYTHONDONTWRITEBYTECODE=1
+          export PIP_CACHE_DIR="$PWD/.tmp/pip-cache" CARGO_HOME="$PWD/dist/development/cargo" CARGO_TARGET_DIR="$PWD/.tmp/target" XDG_CACHE_HOME="$PWD/.tmp/cache"
+          git config --local user.name PrathamKapoor
+          git config --local user.email prathamkapoor027@gmail.com
+          git config --local commit.gpgsign false
+          python -m venv .venv
+          if [ -f .venv/Scripts/python.exe ]; then PYTHON=.venv/Scripts/python.exe; else PYTHON=.venv/bin/python; fi
+          "$PYTHON" -m pip install -e '.[test]'
+          "$PYTHON" scripts/preflight_ci.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verification-${{ matrix.os }}
+          path: |
+            benchmarks/results/*.json
+            benchmarks/results/*.md
+            benchmarks/results/*.html
+            dist/preflight/*.log
+            dist/preflight/pytest.xml

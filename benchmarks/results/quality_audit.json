@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "python_files": 72,
+  "python_public_functions": 294,
+  "dynamic_annotation_references": 80,
+  "package_dynamic_annotation_references": 0,
+  "rust_ast": {
+    "issues": [],
+    "parsed_files": 18,
+    "public_functions": 66
+  },
+  "temporary_directory_checked": true,
+  "issues": [],
+  "scope": "syntax, explicit annotation and documentation coverage; package catch-all annotations rejected; opaque objects require narrowing; not sound type inference or a dead-code proof"
+}

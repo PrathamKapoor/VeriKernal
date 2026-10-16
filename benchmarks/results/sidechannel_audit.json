@@ -1,0 +1,36 @@
+{
+  "samples_per_class": 2000,
+  "randomized_interleaving": true,
+  "paths": {
+    "ratchet_tag": {
+      "t_statistic": -0.1484219602873191,
+      "threshold": 4.5,
+      "below_threshold": true,
+      "mean_first_ns": 38210.05,
+      "mean_last_ns": 38809.65,
+      "all_rejected": true,
+      "interpretation": "finite first/last corruption timing evidence"
+    },
+    "merkle_proof": {
+      "t_statistic": 1.013594297523838,
+      "threshold": 4.5,
+      "below_threshold": true,
+      "mean_first_ns": 12975.6,
+      "mean_last_ns": 10081.5,
+      "all_rejected": true,
+      "interpretation": "finite first/last corruption timing evidence"
+    },
+    "ml_dsa_signature": {
+      "t_statistic": -0.28313375939695445,
+      "threshold": 4.5,
+      "below_threshold": true,
+      "mean_first_ns": 1476457.55,
+      "mean_last_ns": 1487311.35,
+      "all_rejected": true,
+      "interpretation": "public-encoding paths can differ; no secret-leak conclusion from this classification"
+    }
+  },
+  "all_below_threshold": true,
+  "constant_time_certification": false,
+  "scope": "end-to-end first-byte versus last-byte corruption; unfiltered observations, no resampling to obtain acceptance"
+}

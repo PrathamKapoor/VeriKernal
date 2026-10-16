@@ -1,0 +1,16 @@
+{
+  "seed": 20261015,
+  "seeds": 500,
+  "wire_trials": 500,
+  "tree_sizes": 130,
+  "consistency_checks": 8515,
+  "tamper_attacks": 400,
+  "tamper_detections": 400,
+  "tamper_detection_percent": 100.0,
+  "minimality_trials": 100,
+  "oracle_evaluations": 2521,
+  "unitary_trials": 50,
+  "minimum_unitary_fidelity": 0.9999999999999996,
+  "seconds": 2.6016665999999304,
+  "scope": "finite seeded executable invariants; not an unbounded theorem proof"
+}

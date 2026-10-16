@@ -1,0 +1,385 @@
+{
+  "ntt": {
+    "verified": true,
+    "pairs": 100,
+    "coefficients_checked": 25600,
+    "seed": 310033,
+    "seconds": 1.8664271000000099,
+    "reference": "integer schoolbook reduction by X^256 + 1"
+  },
+  "ddmin": {
+    "verified": true,
+    "predicates": 20,
+    "subsets_per_predicate": 1024,
+    "max_oracle_evaluations": 43,
+    "seed": 330010,
+    "seconds": 0.017640799999981027,
+    "cases": [
+      {
+        "terms": [
+          212,
+          138,
+          45
+        ],
+        "minimal_masks": [
+          45,
+          138,
+          212
+        ],
+        "selected_sites": [
+          0,
+          2,
+          3,
+          5
+        ],
+        "oracle_evaluations": 35
+      },
+      {
+        "terms": [
+          106,
+          928,
+          83,
+          153
+        ],
+        "minimal_masks": [
+          83,
+          106,
+          153,
+          928
+        ],
+        "selected_sites": [
+          5,
+          7,
+          8,
+          9
+        ],
+        "oracle_evaluations": 21
+      },
+      {
+        "terms": [
+          338
+        ],
+        "minimal_masks": [
+          338
+        ],
+        "selected_sites": [
+          1,
+          4,
+          6,
+          8
+        ],
+        "oracle_evaluations": 43
+      },
+      {
+        "terms": [
+          706,
+          64,
+          416,
+          160
+        ],
+        "minimal_masks": [
+          64,
+          160
+        ],
+        "selected_sites": [
+          6
+        ],
+        "oracle_evaluations": 8
+      },
+      {
+        "terms": [
+          15,
+          512,
+          228
+        ],
+        "minimal_masks": [
+          15,
+          228,
+          512
+        ],
+        "selected_sites": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "oracle_evaluations": 18
+      },
+      {
+        "terms": [
+          256,
+          272
+        ],
+        "minimal_masks": [
+          256
+        ],
+        "selected_sites": [
+          8
+        ],
+        "oracle_evaluations": 7
+      },
+      {
+        "terms": [
+          272,
+          561,
+          48,
+          82
+        ],
+        "minimal_masks": [
+          48,
+          82,
+          272
+        ],
+        "selected_sites": [
+          4,
+          5
+        ],
+        "oracle_evaluations": 11
+      },
+      {
+        "terms": [
+          5,
+          642,
+          146
+        ],
+        "minimal_masks": [
+          5,
+          146,
+          642
+        ],
+        "selected_sites": [
+          0,
+          2
+        ],
+        "oracle_evaluations": 10
+      },
+      {
+        "terms": [
+          4,
+          33
+        ],
+        "minimal_masks": [
+          4,
+          33
+        ],
+        "selected_sites": [
+          2
+        ],
+        "oracle_evaluations": 6
+      },
+      {
+        "terms": [
+          129
+        ],
+        "minimal_masks": [
+          129
+        ],
+        "selected_sites": [
+          0,
+          7
+        ],
+        "oracle_evaluations": 26
+      },
+      {
+        "terms": [
+          384,
+          196
+        ],
+        "minimal_masks": [
+          196,
+          384
+        ],
+        "selected_sites": [
+          7,
+          8
+        ],
+        "oracle_evaluations": 10
+      },
+      {
+        "terms": [
+          513,
+          129,
+          258,
+          24
+        ],
+        "minimal_masks": [
+          24,
+          129,
+          258,
+          513
+        ],
+        "selected_sites": [
+          3,
+          4
+        ],
+        "oracle_evaluations": 7
+      },
+      {
+        "terms": [
+          51,
+          3,
+          320,
+          260
+        ],
+        "minimal_masks": [
+          3,
+          260,
+          320
+        ],
+        "selected_sites": [
+          0,
+          1
+        ],
+        "oracle_evaluations": 7
+      },
+      {
+        "terms": [
+          736,
+          616,
+          420
+        ],
+        "minimal_masks": [
+          420,
+          616,
+          736
+        ],
+        "selected_sites": [
+          5,
+          6,
+          7,
+          9
+        ],
+        "oracle_evaluations": 22
+      },
+      {
+        "terms": [
+          38,
+          320,
+          330,
+          165
+        ],
+        "minimal_masks": [
+          38,
+          165,
+          320
+        ],
+        "selected_sites": [
+          6,
+          8
+        ],
+        "oracle_evaluations": 18
+      },
+      {
+        "terms": [
+          146,
+          564,
+          128
+        ],
+        "minimal_masks": [
+          128,
+          564
+        ],
+        "selected_sites": [
+          7
+        ],
+        "oracle_evaluations": 7
+      },
+      {
+        "terms": [
+          4,
+          657
+        ],
+        "minimal_masks": [
+          4,
+          657
+        ],
+        "selected_sites": [
+          2
+        ],
+        "oracle_evaluations": 6
+      },
+      {
+        "terms": [
+          404
+        ],
+        "minimal_masks": [
+          404
+        ],
+        "selected_sites": [
+          2,
+          4,
+          7,
+          8
+        ],
+        "oracle_evaluations": 41
+      },
+      {
+        "terms": [
+          537
+        ],
+        "minimal_masks": [
+          537
+        ],
+        "selected_sites": [
+          0,
+          3,
+          4,
+          9
+        ],
+        "oracle_evaluations": 36
+      },
+      {
+        "terms": [
+          562,
+          134,
+          192,
+          132
+        ],
+        "minimal_masks": [
+          132,
+          192,
+          562
+        ],
+        "selected_sites": [
+          6,
+          7
+        ],
+        "oracle_evaluations": 10
+      }
+    ]
+  },
+  "hash": {
+    "verified": true,
+    "hash_cases": 14,
+    "lengths": [
+      0,
+      1,
+      55,
+      56,
+      63,
+      64,
+      65,
+      127,
+      128,
+      129,
+      511,
+      512,
+      1000,
+      1024
+    ],
+    "tree_cases": 8,
+    "tree_sizes": [
+      0,
+      1,
+      2,
+      3,
+      7,
+      16,
+      63,
+      128
+    ],
+    "hashlib_provider": "_hashlib",
+    "openssl": "OpenSSL 3.0.21 9 Jun 2026"
+  },
+  "verified": true
+}

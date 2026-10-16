@@ -1,0 +1,33 @@
+{
+  "controls": {
+    "read_succeeded": true,
+    "socket_succeeded": true,
+    "spawn_succeeded": true
+  },
+  "kernel": "6.8.0-142-generic",
+  "landlock": {
+    "attack": "read",
+    "denied": true,
+    "errno": 13,
+    "returncode": 77
+  },
+  "launcher_sha256": "7582156a73512ecf1ec701435e50056f648ea441093c039678cffd0ab640c111",
+  "machine": "aarch64",
+  "socket": {
+    "attack": "socket",
+    "denied": true,
+    "errno": 13,
+    "returncode": 77
+  },
+  "spawn": {
+    "attack": "spawn",
+    "denied": true,
+    "errno": 13,
+    "error": "Permission denied (os error 13)",
+    "returncode": 77
+  },
+  "target_sha256": "d81aaaf090491c1c6346295785bc77b66566ee7509a16b9c3fc09fb94f72cc0b",
+  "uid": 65534,
+  "verified": true,
+  "backend": "qemu-linux"
+}

@@ -1,0 +1,10 @@
+services:
+  verify:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /workspace/VeriKernel
+    command: python scripts/preflight_ci.py
+    network_mode: none
+    volumes:
+      - ./benchmarks/results:/workspace/VeriKernel/benchmarks/results

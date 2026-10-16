@@ -1,0 +1,800 @@
+{
+  "attestation": {
+    "epoch_65536": {
+      "events": 10000,
+      "inclusion_and_signature_verification_ms": 130.83480000000236,
+      "inclusion_proof_bytes": 448,
+      "signature_bytes": 3309,
+      "signature_count": 1,
+      "signing_cpu_ms": 15.625,
+      "verified": true
+    },
+    "microbatch_128": {
+      "events": 10000,
+      "inclusion_and_signature_verification_ms": 12.82790000004752,
+      "inclusion_proof_bytes": 224,
+      "signature_bytes": 261411,
+      "signature_count": 79,
+      "signing_cpu_ms": 78.125,
+      "verified": true
+    },
+    "per_event": {
+      "events": 10000,
+      "inclusion_and_signature_verification_ms": 9.69950000001063,
+      "inclusion_proof_bytes": 0,
+      "signature_bytes": 33090000,
+      "signature_count": 10000,
+      "signing_cpu_ms": 9031.25,
+      "verified": true
+    }
+  },
+  "batch_ledger": {
+    "events": 10000,
+    "hash_profile": "sha256",
+    "ledger": {
+      "anchored": true,
+      "checkpoint_hash": "dc682ecc4176131f132f883632aa83f25383a34ef41ae76d96cff8eda308c52e",
+      "epochs": 4,
+      "last_consistency_proof_bytes": 416,
+      "tree_size": 10000,
+      "verification_median_ms": 372.82230000005256,
+      "verification_samples_ms": [
+        372.82230000005256,
+        452.8609000000188,
+        288.0109000000175
+      ],
+      "verified": true
+    },
+    "native": {
+      "dedup_events_sec": 9247272.054953575,
+      "kept_events": 1501,
+      "merkle_events_sec": 277848.0115806928,
+      "root": "15da2c166493b08217c5da208496ce0420579d056d46e56e2fca75fe84c643d9",
+      "samples_seconds": {
+        "dedup": [
+          0.0010813999999754742,
+          0.0010154000000284213,
+          0.0012140000000044893
+        ],
+        "merkle": [
+          0.051564500000040425,
+          0.03257459999997536,
+          0.0359909000000016
+        ],
+        "seal": [
+          0.03908720000003996,
+          0.03593009999997321,
+          0.04013559999998506
+        ],
+        "verify": [
+          0.038406000000009044,
+          0.03190809999989597,
+          0.03879590000008193
+        ]
+      },
+      "seal_events_sec": 255838.22837117466,
+      "verify_events_sec": 260375.98291927422
+    },
+    "native_loaded": true,
+    "python": {
+      "dedup_events_sec": 1025294.003049416,
+      "kept_events": 1501,
+      "merkle_events_sec": 171924.10582283745,
+      "root": "15da2c166493b08217c5da208496ce0420579d056d46e56e2fca75fe84c643d9",
+      "samples_seconds": {
+        "dedup": [
+          0.011456500000008418,
+          0.008230700000012803,
+          0.009753300000056697
+        ],
+        "merkle": [
+          0.09114390000002004,
+          0.05816519999996217,
+          0.050097100000016326
+        ],
+        "seal": [
+          0.06194689999995262,
+          0.06701509999993505,
+          0.059092299999974784
+        ],
+        "verify": [
+          0.05578330000003007,
+          0.053568599999948674,
+          0.04774889999998777
+        ]
+      },
+      "seal_events_sec": 161428.57834706255,
+      "verify_events_sec": 186676.5231872698
+    },
+    "scope": "input construction and buffer copying excluded from operation timers; medians of three trials; no universal throughput guarantee",
+    "trials": 3
+  },
+  "detection": {
+    "case_count": 20,
+    "comparison_scope": "in-repository fixtures; static symlink/junction escape; portable child file observation is a measured false negative; no external comparison tool was executed",
+    "portable_hybrid": {
+      "f1": 0.9696969696969697,
+      "false_negative": 1,
+      "false_positive": 0,
+      "precision": 1.0,
+      "recall": 0.9411764705882353,
+      "true_positive": 16
+    },
+    "raw_trace_fixture": {
+      "f1": 0.7586206896551724,
+      "false_negative": 6,
+      "false_positive": 1,
+      "precision": 0.9166666666666666,
+      "recall": 0.6470588235294118,
+      "true_positive": 11
+    },
+    "static_import_only": {
+      "f1": 0.38095238095238093,
+      "false_negative": 13,
+      "false_positive": 0,
+      "precision": 1.0,
+      "recall": 0.23529411764705882,
+      "true_positive": 4
+    }
+  },
+  "environment": {
+    "interpreter_platform": "win-arm64",
+    "machine": "ARM64",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "python": "3.13.15",
+    "signing_backend": "fips204-rust-native",
+    "windows_arm64_x64_emulation": false
+  },
+  "faults": {
+    "initial_fault_count": 32,
+    "master_seed": 30,
+    "minimal_fault_count": 2,
+    "minimal_sites": [
+      7,
+      23
+    ],
+    "naive_double_rerun_success_percent": 0.0,
+    "oracle_evaluations": 30,
+    "reduction_percent": 93.75,
+    "replay_determinism_percent": 100.0,
+    "replays": 20,
+    "scope": "real socket pair and journal writes mediated by runtime boundary shims"
+  },
+  "known_answers": {
+    "encoding": "FIPS 204 ML-DSA-65",
+    "hash_profile": "sha256",
+    "independent_signature_reference": true,
+    "verified": 5
+  },
+  "lattice_confinement": {
+    "accounting_bound": true,
+    "assembly": {
+      "library_sha256": "7952b9228e37ce8dd10e144f4d719eb1f2fa8a9c8f9a5deca8f8b4f8406b9899",
+      "scope": "six fixed-schedule arithmetic bodies; excludes protocol sampling, providers and operating system",
+      "symbols": {
+        "vk_caddq_ct": {
+          "architecture": "aarch64",
+          "body_instruction_count": 5,
+          "property": "no conditional transfers or calls in expanded arithmetic body",
+          "public_prefix_instructions": 0,
+          "secret_dependent_branches": [],
+          "symbol_rva": 5176
+        },
+        "vk_constant_time_compare_32": {
+          "architecture": "aarch64",
+          "body_instruction_count": 132,
+          "property": "no conditional transfers or calls in expanded arithmetic body",
+          "public_prefix_instructions": 3,
+          "secret_dependent_branches": [],
+          "symbol_rva": 205816
+        },
+        "vk_inv_ntt_256_ct": {
+          "architecture": "aarch64",
+          "body_instruction_count": 20066,
+          "property": "no conditional transfers or calls in expanded arithmetic body",
+          "public_prefix_instructions": 10,
+          "secret_dependent_branches": [],
+          "symbol_rva": 56748
+        },
+        "vk_montgomery_reduce_ct": {
+          "architecture": "aarch64",
+          "body_instruction_count": 8,
+          "property": "no conditional transfers or calls in expanded arithmetic body",
+          "public_prefix_instructions": 0,
+          "secret_dependent_branches": [],
+          "symbol_rva": 5144
+        },
+        "vk_ntt_256_ct": {
+          "architecture": "aarch64",
+          "body_instruction_count": 11991,
+          "property": "no conditional transfers or calls in expanded arithmetic body",
+          "public_prefix_instructions": 7,
+          "secret_dependent_branches": [],
+          "symbol_rva": 8756
+        },
+        "vk_poly_chknorm_ct": {
+          "architecture": "aarch64",
+          "body_instruction_count": 876,
+          "property": "no conditional transfers or calls in expanded arithmetic body",
+          "public_prefix_instructions": 14,
+          "secret_dependent_branches": [],
+          "symbol_rva": 5196
+        }
+      },
+      "verified": true
+    },
+    "differential": {
+      "ddmin": {
+        "cases": [
+          {
+            "minimal_masks": [
+              45,
+              138,
+              212
+            ],
+            "oracle_evaluations": 35,
+            "selected_sites": [
+              0,
+              2,
+              3,
+              5
+            ],
+            "terms": [
+              212,
+              138,
+              45
+            ]
+          },
+          {
+            "minimal_masks": [
+              83,
+              106,
+              153,
+              928
+            ],
+            "oracle_evaluations": 21,
+            "selected_sites": [
+              5,
+              7,
+              8,
+              9
+            ],
+            "terms": [
+              106,
+              928,
+              83,
+              153
+            ]
+          },
+          {
+            "minimal_masks": [
+              338
+            ],
+            "oracle_evaluations": 43,
+            "selected_sites": [
+              1,
+              4,
+              6,
+              8
+            ],
+            "terms": [
+              338
+            ]
+          },
+          {
+            "minimal_masks": [
+              64,
+              160
+            ],
+            "oracle_evaluations": 8,
+            "selected_sites": [
+              6
+            ],
+            "terms": [
+              706,
+              64,
+              416,
+              160
+            ]
+          },
+          {
+            "minimal_masks": [
+              15,
+              228,
+              512
+            ],
+            "oracle_evaluations": 18,
+            "selected_sites": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "terms": [
+              15,
+              512,
+              228
+            ]
+          },
+          {
+            "minimal_masks": [
+              256
+            ],
+            "oracle_evaluations": 7,
+            "selected_sites": [
+              8
+            ],
+            "terms": [
+              256,
+              272
+            ]
+          },
+          {
+            "minimal_masks": [
+              48,
+              82,
+              272
+            ],
+            "oracle_evaluations": 11,
+            "selected_sites": [
+              4,
+              5
+            ],
+            "terms": [
+              272,
+              561,
+              48,
+              82
+            ]
+          },
+          {
+            "minimal_masks": [
+              5,
+              146,
+              642
+            ],
+            "oracle_evaluations": 10,
+            "selected_sites": [
+              0,
+              2
+            ],
+            "terms": [
+              5,
+              642,
+              146
+            ]
+          },
+          {
+            "minimal_masks": [
+              4,
+              33
+            ],
+            "oracle_evaluations": 6,
+            "selected_sites": [
+              2
+            ],
+            "terms": [
+              4,
+              33
+            ]
+          },
+          {
+            "minimal_masks": [
+              129
+            ],
+            "oracle_evaluations": 26,
+            "selected_sites": [
+              0,
+              7
+            ],
+            "terms": [
+              129
+            ]
+          },
+          {
+            "minimal_masks": [
+              196,
+              384
+            ],
+            "oracle_evaluations": 10,
+            "selected_sites": [
+              7,
+              8
+            ],
+            "terms": [
+              384,
+              196
+            ]
+          },
+          {
+            "minimal_masks": [
+              24,
+              129,
+              258,
+              513
+            ],
+            "oracle_evaluations": 7,
+            "selected_sites": [
+              3,
+              4
+            ],
+            "terms": [
+              513,
+              129,
+              258,
+              24
+            ]
+          },
+          {
+            "minimal_masks": [
+              3,
+              260,
+              320
+            ],
+            "oracle_evaluations": 7,
+            "selected_sites": [
+              0,
+              1
+            ],
+            "terms": [
+              51,
+              3,
+              320,
+              260
+            ]
+          },
+          {
+            "minimal_masks": [
+              420,
+              616,
+              736
+            ],
+            "oracle_evaluations": 22,
+            "selected_sites": [
+              5,
+              6,
+              7,
+              9
+            ],
+            "terms": [
+              736,
+              616,
+              420
+            ]
+          },
+          {
+            "minimal_masks": [
+              38,
+              165,
+              320
+            ],
+            "oracle_evaluations": 18,
+            "selected_sites": [
+              6,
+              8
+            ],
+            "terms": [
+              38,
+              320,
+              330,
+              165
+            ]
+          },
+          {
+            "minimal_masks": [
+              128,
+              564
+            ],
+            "oracle_evaluations": 7,
+            "selected_sites": [
+              7
+            ],
+            "terms": [
+              146,
+              564,
+              128
+            ]
+          },
+          {
+            "minimal_masks": [
+              4,
+              657
+            ],
+            "oracle_evaluations": 6,
+            "selected_sites": [
+              2
+            ],
+            "terms": [
+              4,
+              657
+            ]
+          },
+          {
+            "minimal_masks": [
+              404
+            ],
+            "oracle_evaluations": 41,
+            "selected_sites": [
+              2,
+              4,
+              7,
+              8
+            ],
+            "terms": [
+              404
+            ]
+          },
+          {
+            "minimal_masks": [
+              537
+            ],
+            "oracle_evaluations": 36,
+            "selected_sites": [
+              0,
+              3,
+              4,
+              9
+            ],
+            "terms": [
+              537
+            ]
+          },
+          {
+            "minimal_masks": [
+              132,
+              192,
+              562
+            ],
+            "oracle_evaluations": 10,
+            "selected_sites": [
+              6,
+              7
+            ],
+            "terms": [
+              562,
+              134,
+              192,
+              132
+            ]
+          }
+        ],
+        "max_oracle_evaluations": 43,
+        "predicates": 20,
+        "seconds": 0.022568900000010217,
+        "seed": 330010,
+        "subsets_per_predicate": 1024,
+        "verified": true
+      },
+      "hash": {
+        "hash_cases": 14,
+        "hashlib_provider": "_hashlib",
+        "lengths": [
+          0,
+          1,
+          55,
+          56,
+          63,
+          64,
+          65,
+          127,
+          128,
+          129,
+          511,
+          512,
+          1000,
+          1024
+        ],
+        "openssl": "OpenSSL 3.0.21 9 Jun 2026",
+        "tree_cases": 8,
+        "tree_sizes": [
+          0,
+          1,
+          2,
+          3,
+          7,
+          16,
+          63,
+          128
+        ],
+        "verified": true
+      },
+      "ntt": {
+        "coefficients_checked": 25600,
+        "pairs": 100,
+        "reference": "integer schoolbook reduction by X^256 + 1",
+        "seconds": 1.9004130000000714,
+        "seed": 310033,
+        "verified": true
+      },
+      "verified": true
+    },
+    "resources": {
+      "controls": {
+        "memory_succeeded": true,
+        "spawn_succeeded": true
+      },
+      "memory": {
+        "accounting": {
+          "active_processes": 1,
+          "kernel_time": 0,
+          "page_faults": 4129,
+          "period_kernel": 0,
+          "period_user": 156250,
+          "terminated_processes": 0,
+          "total_processes": 2,
+          "user_time": 156250
+        },
+        "assigned_before_resume": true,
+        "attack": "memory",
+        "backend": "windows-nt-job",
+        "denied": true,
+        "elapsed_seconds": 0.03180650000001606,
+        "error": "memory allocation failed because the memory allocator returned an error",
+        "memory_limit_bytes": 16777216,
+        "output": "{\"attack\":\"memory\",\"denied\":true,\"error\":\"memory allocation failed because the memory allocator returned an error\"}\n",
+        "peak_process_memory_bytes": 1572864,
+        "pid": 11744,
+        "returncode": 77,
+        "tid": 3392
+      },
+      "spawn": {
+        "accounting": {
+          "active_processes": 1,
+          "kernel_time": 156250,
+          "page_faults": 4351,
+          "period_kernel": 156250,
+          "period_user": 156250,
+          "terminated_processes": 0,
+          "total_processes": 2,
+          "user_time": 156250
+        },
+        "assigned_before_resume": true,
+        "attack": "spawn",
+        "backend": "windows-nt-job",
+        "denied": true,
+        "elapsed_seconds": 0.03926539999997658,
+        "errno": 1816,
+        "error": "Not enough quota is available to process this command. (os error 1816)",
+        "memory_limit_bytes": 16777216,
+        "output": "{\"attack\":\"spawn\",\"denied\":true,\"errno\":1816,\"error\":\"Not enough quota is available to process this command. (os error 1816)\"}\n",
+        "peak_process_memory_bytes": 1572864,
+        "pid": 3556,
+        "returncode": 77,
+        "tid": 3516
+      }
+    }
+  },
+  "release_boundaries": {
+    "distribution": {
+      "artifact": "C:\\Pratham\\VeriKernel\\dist\\verikernel-0.2.0-py3-none-any.whl",
+      "build_1_gitoid": "gitoid:blob:sha256:eebdd78da565304b8c132c7f554b877a5132dd787007875f4bc1583f2dff12b1",
+      "build_1_sha256": "1a734d9a8d60e3f869e394f1f50b90a76537dbd4141f3f878e31093b628ab5e6",
+      "build_2_gitoid": "gitoid:blob:sha256:eebdd78da565304b8c132c7f554b877a5132dd787007875f4bc1583f2dff12b1",
+      "build_2_sha256": "1a734d9a8d60e3f869e394f1f50b90a76537dbd4141f3f878e31093b628ab5e6",
+      "clean_install_verified": true,
+      "reproducible": true,
+      "scope": "same source snapshot and Python ZIP toolchain; optional native libraries excluded",
+      "size_bytes": 178014,
+      "source_date_epoch": 1760486400
+    },
+    "machine_code": {
+      "architecture": "aarch64",
+      "artifact_sha256": "7952b9228e37ce8dd10e144f4d719eb1f2fa8a9c8f9a5deca8f8b4f8406b9899",
+      "body_instruction_count": 132,
+      "conditional_branches_in_body": [],
+      "constant_time_asm_verified": true,
+      "guard_instruction_count": 3,
+      "library": "C:\\Pratham\\VeriKernel\\dist\\native\\aarch64-pc-windows-gnullvm\\verikernel_core.dll",
+      "machine_code_hex": "e8031f2a801000b4611000b408004039290040390a0440392b0440390c0840392d0840392801084a0e0c40392f0c403969010a4aaa010c4a0b1040392801082ae9010e4a2c1040390d1440392e1440394901092a0a1840392f1840390801092a89010b4acb010d4a29010b2aea010a4a0b1c40392c1c40390d2040392e20403929010a2a0a2440392f2440390801092a89010b4acb010d4a29010b2aea010a4a0b2840392c2840390d2c40392e2c403929010a2a0a3040392f304039cd010d4a0e34403930344039ea010a4a0f384039313840398b010b4aaa010a2a0c020e4a29010b2a4a010c2a2b020f4a0801092a49010b2a0a3c40392b3c40390c4040392d4040390e4440392f4440396a010a4a0b4840393048403929010a2aaa010c4aec010e4a0801092a49010c2a0a020b4a29010a2a0a4c40392b4c40390c5040392d5040390e5440392f54403910584039315840396a010a4a0b5c4039225c403929010a2aaa010c4a2c02104a0d604039306040394b000b4a29010a2aea010e4a8b010b2a0c020d4a0d6440392e6440396b010c2a0c6840392f684039cd010d4a0e6c4039306c403929010a2a6a010d2aeb010c4a0801092a49010b2a0a020e4a0b7040392c7040390d7440392e7440390f7840393078403929010a2a0a7c4039317c40398b010b4acc010d4a0d020f4a29010b2a8b010d2a2a020a4a0801092a69010a2a0801092a081d001208050051087d1f53e003082ac0035fd6",
+      "scope": "branch-free decoded comparison body; public pointer guards excluded",
+      "symbol": "vk_constant_time_compare_32",
+      "symbol_rva": 205816
+    },
+    "native_target": {
+      "binary": "C:\\Pratham\\VeriKernel\\dist\\native\\aarch64-pc-windows-gnullvm\\vk-target-bin.exe",
+      "event_count": 5,
+      "fault_code": -28,
+      "gitoid": "gitoid:blob:sha256:114f91a34fe6c1d0688911008bb727aee76f4cbd0c6b5b595cd40d7dfcfafe8c",
+      "minimal_fault_sites": [
+        2
+      ],
+      "normal_seconds": 0.1500475999999935,
+      "oracle_evaluations": 6,
+      "scope": "cooperative compiled adapter; actual filesystem workload",
+      "shared_libraries": [
+        "KERNEL32.dll",
+        "WS2_32.dll",
+        "api-ms-win-core-synch-l1-2-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "libunwind.dll",
+        "ntdll.dll"
+      ],
+      "strict_denial": true,
+      "verified": true
+    },
+    "zero_dynamic_package_annotations": true
+  },
+  "rust_ffi": {
+    "fnv1a_1024": {
+      "native": {
+        "calls": 20000,
+        "checksum": 0,
+        "seconds": 0.09027620000006209
+      },
+      "python": {
+        "calls": 20000,
+        "checksum": 0,
+        "seconds": 4.0439225999999735
+      }
+    },
+    "native_loaded": true,
+    "speedup": 44.79500244801168
+  },
+  "sidechannel": {
+    "all_below_threshold": true,
+    "constant_time_certification": false,
+    "paths": {
+      "merkle_proof": {
+        "all_rejected": true,
+        "below_threshold": true,
+        "interpretation": "finite first/last corruption timing evidence",
+        "mean_first_ns": 12975.6,
+        "mean_last_ns": 10081.5,
+        "t_statistic": 1.013594297523838,
+        "threshold": 4.5
+      },
+      "ml_dsa_signature": {
+        "all_rejected": true,
+        "below_threshold": true,
+        "interpretation": "public-encoding paths can differ; no secret-leak conclusion from this classification",
+        "mean_first_ns": 1476457.55,
+        "mean_last_ns": 1487311.35,
+        "t_statistic": -0.28313375939695445,
+        "threshold": 4.5
+      },
+      "ratchet_tag": {
+        "all_rejected": true,
+        "below_threshold": true,
+        "interpretation": "finite first/last corruption timing evidence",
+        "mean_first_ns": 38210.05,
+        "mean_last_ns": 38809.65,
+        "t_statistic": -0.1484219602873191,
+        "threshold": 4.5
+      }
+    },
+    "randomized_interleaving": true,
+    "samples_per_class": 2000,
+    "scope": "end-to-end first-byte versus last-byte corruption; unfiltered observations, no resampling to obtain acceptance"
+  },
+  "transport": {
+    "bounded_per_cpu": {
+      "delivered_events": 256,
+      "drop_rate_percent": 97.44,
+      "input_events": 10000,
+      "producer_p50_us": 0.4,
+      "producer_p99_us": 0.5,
+      "sequence_inversions": 3,
+      "suppressed_events": 0,
+      "throughput_input_events_sec": 558250.6657107802,
+      "wall_time_ms": 17.913100000100712
+    },
+    "portable_two_level": {
+      "delivered_events": 1501,
+      "drop_rate_percent": 0.0,
+      "input_events": 10000,
+      "producer_p50_us": 1.0,
+      "producer_p99_us": 8.2,
+      "sequence_inversions": 0,
+      "suppressed_events": 8499,
+      "throughput_input_events_sec": 56911.665696355456,
+      "wall_time_ms": 175.71089999989908
+    }
+  }
+}
