@@ -1,0 +1,12 @@
+[package]
+name = "verikernel-sandbox-exec"
+version = "0.2.0"
+edition = "2021"
+license = "MIT"
+authors = ["Pratham Kapoor <prathamkapoor027@gmail.com>"]
+
+[dependencies]
+serde_json = "1"
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
